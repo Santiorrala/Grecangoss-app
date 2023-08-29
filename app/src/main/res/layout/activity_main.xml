@@ -25,10 +25,17 @@
                 app:srcCompat="@drawable/logo_grecangoss" />
         </LinearLayout>
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/view_pager"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="403dp" />
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="254dp"
+                android:layout_height="256dp" />
+        </LinearLayout>
 
     </LinearLayout>
 
