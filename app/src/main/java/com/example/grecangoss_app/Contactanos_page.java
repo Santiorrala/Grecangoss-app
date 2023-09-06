@@ -1,20 +1,14 @@
 package com.example.grecangoss_app;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
-
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-public class principal_page extends AppCompatActivity {
-
+public class Contactanos_page extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_principal_page);
-
-
+        setContentView(R.layout.activity_contactanos_page);
     }
 }
