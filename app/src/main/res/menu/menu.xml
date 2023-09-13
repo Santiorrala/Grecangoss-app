@@ -10,11 +10,13 @@
         <!-- "file" submenu -->
         <menu>
             <item android:id="@+id/acerca_de"
-                android:title="Acerca de nosotros"
+                android:icon="@drawable/baseline_visibility_24"
+                android:title="@string/Acerca_de"
                 app:showAsAction="always"/>
             <item
                 android:id="@+id/contactanos"
-                android:title="Contactanos"
+                android:icon="@drawable/baseline_public_24"
+                android:title="@string/Contactanos"
                 app:showAsAction="always"
                 />
 

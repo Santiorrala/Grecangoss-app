@@ -19,7 +19,7 @@
             android:name=".Acerca_de_page"
             android:exported="false" />
         <activity
-            android:name=".principal_page"
+            android:name=".prroductos_page"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

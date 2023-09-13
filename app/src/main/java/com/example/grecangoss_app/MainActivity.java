@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.widget.Toolbar;
+
 import androidx.viewpager.widget.ViewPager;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private int[] imagenes = {R.drawable.imagen1, R.drawable.imagen2, R.drawable.imagen3};
     private int posicionActual = 0;
+
 
     private Handler handler = new Handler();
     private Runnable cambioAutomatico = new Runnable() {
@@ -39,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("");
 
         btn_principalPage = findViewById(R.id.btn_principalPage);
 
@@ -93,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         handler.removeCallbacks(cambioAutomatico); // Detener el cambio automático al cerrar la actividad
     }
     public void principal_page(){
-        Intent principal_page = new Intent(MainActivity.this , com.example.grecangoss_app.principal_page.class);
+        Intent principal_page = new Intent(MainActivity.this , prroductos_page.class);
         startActivity(principal_page);
     }
     public void acerca_de_page(){

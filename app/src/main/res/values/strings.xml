@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">Grecangoss</string>
     <string name="Materiales">Materiales</string>
+    <string name="Acerca_de">Acerca de nosostros</string>
+    <string name="Contactanos">Contactanos</string>
+    <string name="Vision_title">Visión</string>
+    <string name="Mision_title">Misión</string>
+    <string name="vision_content">\n Siempre pensando en el CLIENTE, con el mejor servicio
+        y los mejores productos de acero.</string>
+    <string name="mision_content">\n Líderes en el reciclaje para la producción de acero, con excelencia en el servicio, calidad, tecnología,
+        sistemas de gestión, recursos humanos,
+        seguridad industrial, protección ambiental y responsabilidad social.</string>
+    <string name="Valores_title">Valores</string>
+    <string name="valores_content">\n Progreso \n
+                                    Empoderamiento \n
+                                    Responsabilidad e integridad \n
+                                    Creatividad \n
+                                    Sostenibilidad</string>
+
+    <string name="quienes_somos_title">¿Quienes somos?</string>
+    <string name="quienes_somos_content">En 1963 un grupo de jóvenes empresarios creó ADELCA, actualmente, la siderúrgica número uno del Ecuador; pionera en el reciclaje y fabricación de acero. Sus operaciones se realizan bajo estrictas normas técnicas y de seguridad, acompañadas de un eficiente programa integral en protección ambiental.
+
+Desde entonces, además de cubrir las necesidades de los sectores de la construcción, metalmecánico, seguridad perimetral, agropecuario, industrial, entre otros.
+
+Su compromiso se extiende a favor de sus grupos de interés.</string>
 </resources>

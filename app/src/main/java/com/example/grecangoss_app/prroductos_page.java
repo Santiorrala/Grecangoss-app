@@ -5,9 +5,8 @@ import android.os.Bundle;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-public class principal_page extends AppCompatActivity {
+public class prroductos_page extends AppCompatActivity {
 
 
     @Override
