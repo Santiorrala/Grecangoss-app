@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         handler.removeCallbacks(cambioAutomatico); // Detener el cambio automático al cerrar la actividad
     }
     public void principal_page(){
-        Intent principal_page = new Intent(MainActivity.this , prroductos_page.class);
+        Intent principal_page = new Intent(MainActivity.this , Productos_page.class);
         startActivity(principal_page);
     }
     public void acerca_de_page(){

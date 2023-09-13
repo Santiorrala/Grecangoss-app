@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    app:srcCompat="@drawable/logo_grecangoss" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/acrilicoImage"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:srcCompat="@drawable/acrilico" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:srcCompat="@drawable/fibra_vidrio" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:srcCompat="@drawable/policarbonato" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:srcCompat="@drawable/resina_sintetica" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:srcCompat="@drawable/techo_metalico" />
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:srcCompat="@drawable/techo_termoacustico" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        app:srcCompat="@drawable/teja_pvc" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
