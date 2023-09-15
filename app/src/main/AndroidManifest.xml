@@ -13,6 +13,24 @@
         android:theme="@style/Theme.Grecangossapp"
         tools:targetApi="31">
         <activity
+            android:name=".Teja_page"
+            android:exported="false" />
+        <activity
+            android:name=".TechoTermo_page"
+            android:exported="false" />
+        <activity
+            android:name=".TechoMeta_page"
+            android:exported="false" />
+        <activity
+            android:name=".Resina_page"
+            android:exported="false" />
+        <activity
+            android:name=".Policarbonato_page"
+            android:exported="false" />
+        <activity
+            android:name=".FibraVidrio_page"
+            android:exported="false" />
+        <activity
             android:name=".Acrilico_page"
             android:exported="false" />
         <activity

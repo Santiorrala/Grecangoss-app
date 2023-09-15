@@ -6,17 +6,17 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class Acrilico_page extends AppCompatActivity {
+public class Teja_page extends AppCompatActivity {
     private ViewPager viewPager;
-    private int[]imagenes = {R.drawable.acrilico1, R.drawable.acrilico2};
+    private int[]imagenes = {R.drawable.pvc1, R.drawable.pvc2,R.drawable.pvc3, R.drawable.pvc4};
     private int posicionActual = 0;
     private Handler handler = new Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_acrilico_page);
+        setContentView(R.layout.activity_teja_page);
 
-        viewPager = findViewById(R.id.viewPagerAcri);
+        viewPager = findViewById(R.id.viewPagerTeja);
         ImagePagerAdapter adapter = new ImagePagerAdapter(this, imagenes);
         viewPager.setAdapter(adapter);
 
@@ -32,7 +32,5 @@ public class Acrilico_page extends AppCompatActivity {
             @Override
             public void onPageScrollStateChanged(int state) {}
         });
-
     }
-
 }

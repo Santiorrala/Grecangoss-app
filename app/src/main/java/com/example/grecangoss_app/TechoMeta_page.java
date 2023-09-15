@@ -6,17 +6,17 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class Acrilico_page extends AppCompatActivity {
+public class TechoMeta_page extends AppCompatActivity {
     private ViewPager viewPager;
-    private int[]imagenes = {R.drawable.acrilico1, R.drawable.acrilico2};
+    private int[]imagenes = {R.drawable.meta1, R.drawable.meta2,R.drawable.meta3, R.drawable.meta4, R.drawable.meta5 };
     private int posicionActual = 0;
     private Handler handler = new Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_acrilico_page);
+        setContentView(R.layout.activity_techo_meta_page);
 
-        viewPager = findViewById(R.id.viewPagerAcri);
+        viewPager = findViewById(R.id.viewPagerTechoMeta);
         ImagePagerAdapter adapter = new ImagePagerAdapter(this, imagenes);
         viewPager.setAdapter(adapter);
 
@@ -32,7 +32,5 @@ public class Acrilico_page extends AppCompatActivity {
             @Override
             public void onPageScrollStateChanged(int state) {}
         });
-
     }
-
 }

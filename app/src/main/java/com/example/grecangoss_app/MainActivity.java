@@ -18,7 +18,7 @@ import androidx.viewpager.widget.ViewPager;
 public class MainActivity extends AppCompatActivity {
     private Button btn_principalPage;
     private ViewPager viewPager;
-    private int[] imagenes = {R.drawable.imagen1, R.drawable.imagen2, R.drawable.imagen3};
+    private int[] imagenes = {R.drawable.imagen1, R.drawable.imagen2, R.drawable.imagen3,R.drawable.imagen4, R.drawable.imagen5};
     private int posicionActual = 0;
 
 
