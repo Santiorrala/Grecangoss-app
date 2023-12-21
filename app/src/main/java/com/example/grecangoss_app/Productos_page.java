@@ -3,7 +3,6 @@ package com.example.grecangoss_app;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 
@@ -16,8 +15,8 @@ public class Productos_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_productos_page);
 
-        ImageView acrilicoImage= findViewById(R.id.acrilicoImage);
-        ImageView fibra_vidrioImage = findViewById(R.id.fibra_vidrioImage);
+        ImageView acrilicoImage= findViewById(R.id.parasol_fibra);
+        ImageView fibra_vidrioImage = findViewById(R.id.masetero_fibra);
         ImageView policarbonatoImage = findViewById(R.id.policarImage);
         ImageView resinaImage = findViewById(R.id.resinaImage);
         ImageView techometaImage = findViewById(R.id.techometaImage);

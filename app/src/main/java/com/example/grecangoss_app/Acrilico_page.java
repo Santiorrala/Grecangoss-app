@@ -1,37 +1,47 @@
 package com.example.grecangoss_app;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
+import android.view.View;
+import android.widget.ImageView;
 
 public class Acrilico_page extends AppCompatActivity {
-    private ViewPager viewPager;
-    private int[]imagenes = {R.drawable.acrilico1, R.drawable.acrilico2};
-    private int posicionActual = 0;
-    private Handler handler = new Handler();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acrilico_page);
 
-        viewPager = findViewById(R.id.viewPagerAcri);
-        ImagePagerAdapter adapter = new ImagePagerAdapter(this, imagenes);
-        viewPager.setAdapter(adapter);
+        ImageView domo_acrilico = findViewById(R.id.domo_acrilico);
+        ImageView lamina_acrilico = findViewById(R.id.lamina_acrilico);
 
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        domo_acrilico.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
+            public void onClick(View v) {
+                // Crear un objeto Product con la información del producto
+                Product selectedProduct = new Product(getString(R.string.nombre_domo_acrilico), getString(R.string.descripcion_domo_acrilico), "drawable/grecangoss_domos_acrilicos", getString(R.string.caracteristica_domo_acrilico), getString(R.string.variacion_domo_acrilico), getString(R.string.etiqueta_domo_acrilico));
 
-            @Override
-            public void onPageSelected(int position) {
-                posicionActual = position;
+                // Iniciar la actividad ProductDetailActivity y pasar el producto
+                Intent intent = new Intent(Acrilico_page.this, producto_detalle.class);
+                intent.putExtra("PRODUCT", selectedProduct);
+                startActivity(intent);
             }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {}
         });
+
+        lamina_acrilico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Product selecproduct = new Product(getString(R.string.name_lamina_acrilico),getString(R.string.descripcion_lamina_acrilico),"drawable/grecangoss_laminas_acrilicos",getString(R.string.carateristica_lamina_acrilico),getString(R.string.variacion_lamina_acrilico),getString(R.string.etiqueta_lamina_acrilico));
+
+                Intent intent = new Intent(Acrilico_page.this, producto_detalle.class);
+                intent.putExtra("PRODUCT",selecproduct );
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 

@@ -5,34 +5,117 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FibraVidrio_page">
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView8"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="135dp"
-                app:srcCompat="@drawable/logo_grecangoss" />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    app:srcCompat="@drawable/logo_grecangoss" />
+            </LinearLayout>
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPagerFibra"
-                android:layout_width="wrap_content"
-                android:layout_height="552dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingVertical="20sp">
+
+                    <ImageView
+                        android:id="@+id/parasol_fibra"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/grecangoss_parasol_fibra" />
+
+                    <ImageView
+                        android:id="@+id/masetero_fibra"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/grecangoss_macetero_fibra" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingVertical="20sp">
+
+                    <ImageView
+                        android:id="@+id/piscina_fibra"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/grecangoss_psicina_fibra" />
+
+                    <ImageView
+                        android:id="@+id/bote_fibra"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/grecangoss_bote_fibra" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingVertical="20sp">
+
+                    <ImageView
+                        android:id="@+id/silla_fibra"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/grecangoss_silla_fibra" />
+
+                    <ImageView
+                        android:id="@+id/tacho_fibra"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/grecangoss_tacho_fibra" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingVertical="20sp">
+
+                    <ImageView
+                        android:id="@+id/tapa_fibra"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/grecangoss_tapa_fibra" />
+
+                    <ImageView
+                        android:id="@+id/tobogan_fibra"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:srcCompat="@drawable/grecangoss_tobogan_fibra" />
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

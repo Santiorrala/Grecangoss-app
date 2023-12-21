@@ -35,16 +35,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingVertical="20sp">
 
                     <ImageView
-                        android:id="@+id/acrilicoImage"
+                        android:id="@+id/parasol_fibra"
                         android:layout_width="200dp"
                         android:layout_height="200dp"
                         app:srcCompat="@drawable/acrilico" />
 
                     <ImageView
-                        android:id="@+id/fibra_vidrioImage"
+                        android:id="@+id/masetero_fibra"
                         android:layout_width="200dp"
                         android:layout_height="200dp"
                         app:srcCompat="@drawable/fibra_vidrio" />
@@ -54,7 +55,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingVertical="20sp">
 
                     <ImageView
                         android:id="@+id/policarImage"
@@ -73,7 +75,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingVertical="20sp">
 
                     <ImageView
                         android:id="@+id/techometaImage"
@@ -93,7 +96,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingVertical="20sp">
 
                     <ImageView
                         android:id="@+id/tejaImage"

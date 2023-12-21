@@ -5,34 +5,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Teja_page">
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView8"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="135dp"
-                app:srcCompat="@drawable/logo_grecangoss" />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    app:srcCompat="@drawable/logo_grecangoss" />
+            </LinearLayout>
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPagerTeja"
-                android:layout_width="wrap_content"
-                android:layout_height="552dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingVertical="20sp">
+
+                <ImageView
+                    android:id="@+id/tejaroma_pvc"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/grecangoss_tejaroma_pvc" />
+
+                <ImageView
+                    android:id="@+id/techotras_ondapequena_pvc"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/grecangoss_techotras_ondapequena_pvc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingVertical="20sp">
+
+                <ImageView
+                    android:id="@+id/techo_termo_pvc"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/grecangoss_techo_termo_pvc" />
+
+                <ImageView
+                    android:id="@+id/techo_tras_roma_pvc"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/grecangoss_techotras_romacolo_pvc" />
+            </LinearLayout>
+
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

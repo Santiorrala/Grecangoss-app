@@ -5,22 +5,22 @@
     <string name="Contactanos">Contactanos</string>
     <string name="Vision_title">Visión</string>
     <string name="Mision_title">Misión</string>
-    <string name="vision_content">\n Siempre pensando en el CLIENTE, con el mejor servicio
-        y los mejores productos de acero.</string>
-    <string name="mision_content">\n Líderes en el reciclaje para la producción de acero, con excelencia en el servicio, calidad, tecnología,
-        sistemas de gestión, recursos humanos,
-        seguridad industrial, protección ambiental y responsabilidad social.</string>
+    <string name="vision_content">\n Seguir proyectando los productos translúcidos en el mercado, diversificar y
+        dar a conocer la variedad de otros productos con sus aplicaciones tanto industrial como para el hogar.</string>
+    <string name="mision_content">\n Comercializar materiales de construcción enfocado en cubiertas y techados con productos de la mejor calidad, teniendo variedad y opciones
+        para nuestros clientes, brindando soluciones técnicas y asesoría personalizada para uso de espacios exteriores.</string>
     <string name="Valores_title">Valores</string>
-    <string name="valores_content">\n Progreso \n
-                                    Empoderamiento \n
-                                    Responsabilidad e integridad \n
-                                    Creatividad \n
-                                    Sostenibilidad</string>
+    <string name="valores_content">\n Confianza \n
+                                    Responsabilidad  \n
+                                    Srevicio \n
+                                    Calidad \n
+                                    Orientacion al cliente</string>
 
     <string name="quienes_somos_title">¿Quienes somos?</string>
-    <string name="quienes_somos_content">En 1963 un grupo de jóvenes empresarios creó ADELCA, actualmente, la siderúrgica número uno del Ecuador; pionera en el reciclaje y fabricación de acero. Sus operaciones se realizan bajo estrictas normas técnicas y de seguridad, acompañadas de un eficiente programa integral en protección ambiental.
+    <string name="quienes_somos_content">Constructora Grecangoss es una compañía con más de 20 años en el mercado, dedicada a la comercialización, provisión e instalación de materiales de construcción.
+Siendo pioneros en insertar los materiales de Policarbonato y Acrílico en nuestro territorio, desarrollando proyectos de alto impacto y durabilidad en obras locales.
+Ofrecemos amplia gama de productos, cumpliendo las expectativas de nuestros clientes, contribuyendo a la innovación en diseños y aplicaciones arquitectónicas.
+</string>
 
-Desde entonces, además de cubrir las necesidades de los sectores de la construcción, metalmecánico, seguridad perimetral, agropecuario, industrial, entre otros.
 
-Su compromiso se extiende a favor de sus grupos de interés.</string>
 </resources>

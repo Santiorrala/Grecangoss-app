@@ -5,34 +5,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TechoMeta_page">
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView8"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="135dp"
-                app:srcCompat="@drawable/logo_grecangoss" />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    app:srcCompat="@drawable/logo_grecangoss" />
+            </LinearLayout>
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPagerTechoMeta"
-                android:layout_width="wrap_content"
-                android:layout_height="552dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingVertical="20sp">
+
+                <ImageView
+                    android:id="@+id/supertecho_03_tm"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/grecangoss_supertecho03_tm" />
+
+                <ImageView
+                    android:id="@+id/master1000de40_prepintado_tm"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/grecangoss_master1000de040_prepintado_tm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingVertical="20sp">
+
+                <ImageView
+                    android:id="@+id/zinc_tm"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/grecangoss_zinc_tm" />
+
+                <ImageView
+                    android:id="@+id/teja_toledo_tm"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/grecangoss_teja_toledo_tm" />
+            </LinearLayout>
+
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

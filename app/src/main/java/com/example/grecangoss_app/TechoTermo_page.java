@@ -3,35 +3,45 @@ package com.example.grecangoss_app;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.ImageView;
 
 public class TechoTermo_page extends AppCompatActivity {
-    private ViewPager viewPager;
-    private int[]imagenes = {R.drawable.termo1, R.drawable.termo2};
-    private int posicionActual = 0;
-    private Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_techo_termo_page);
 
-        viewPager = findViewById(R.id.viewPagerTechoTermo);
-        ImagePagerAdapter adapter = new ImagePagerAdapter(this, imagenes);
-        viewPager.setAdapter(adapter);
+        ImageView cubierta_madrilena_ta = findViewById(R.id.cubierta_madrilena_ta);
+        ImageView cubierta_trapezoidal_ta = findViewById(R.id.cubierta_trapezoidal_ta);
 
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
 
+        cubierta_madrilena_ta.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onPageSelected(int position) {
-                posicionActual = position;
+            public void onClick(View view) {
+                Product productSelect = new Product(getString(R.string.nombre_cubierta_termoacustica_madrilena),getString(R.string.descripcion_cubierta_termoacustica_madrilena),"drawable/grecangoss_cubierta_termomadri_ta",getString(R.string.caracteristicas_cubierta_termoacustica_madrilena),getString(R.string.variaciones_cubierta_termoacustica_madrilena),getString(R.string.etiquetas_cubierta_termoacustica_madrilena));
+
+                Intent intent = new Intent(TechoTermo_page.this, producto_detalle.class);
+                intent.putExtra("PRODUCT",productSelect);
+                startActivity(intent);
             }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {}
         });
+
+        cubierta_trapezoidal_ta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Product productSelect = new Product(getString(R.string.nombre_cubierta_termoacustica_trapezoidal),getString(R.string.descripcion_cubierta_termoacustica_trapezoidal),"drawable/grecangoss_cubierta_termotrape_ta",getString(R.string.caracteristicas_cubierta_termoacustica_trapezoidal),getString(R.string.variaciones_cubierta_termoacustica_trapezoidal),getString(R.string.etiquetas_cubierta_termoacustica_trapezoidal));
+
+                Intent intent = new Intent(TechoTermo_page.this, producto_detalle.class);
+                intent.putExtra("PRODUCT",productSelect);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
